@@ -18,8 +18,21 @@ ul {
   margin: 0 auto;
 }
 
+a {
+  color: #3882f6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(151, 231, 255);
+}
+
 header {
   background-color: #1f2937;
+  position: fixed;
+  transform: translate(-50%);
+  left: 50%;
+  width: 900px;
 }
 
 header div {
@@ -38,6 +51,8 @@ header ul {
   gap: 1rem;
   font-size: 1rem;
   font-weight: 100;
+  /* color: #478bf9; */
+  font-weight: 400;
 }
 
 .hero {
@@ -76,7 +91,17 @@ button {
   padding: 8px;
   font-size: 1rem;
   font-weight: 700;
+  border: 2px solid #e5e7eb;
   border-radius: 10px;
+  box-shadow: 4px 4px 5px rgb(89, 87, 87);
+}
+
+button:hover {
+  background-color: rgb(0, 187, 255);
+  color: #1f2937;
+  cursor: pointer;
+  border-color: #e5e7eb;
+  box-shadow: 4px 4px 8px rgb(105, 165, 171);
 }
 
 .mainSection {
@@ -106,7 +131,7 @@ button {
   display: flex;
   gap: 2rem;
   justify-content: center;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .quoteSection {
@@ -128,7 +153,7 @@ button {
 .callForAction {
   color: #e5e7eb;
   max-width: 900px;
-  background-color: #3882f6;
+  background-color: #1f2937;
   margin: 5rem auto;
   padding: 2rem 0;
   display: flex;
@@ -138,10 +163,6 @@ button {
 
 .callForAction h2 {
   color: #f9faf8;
-}
-
-.callForAction button {
-  border: 2px solid #e5e7eb;
 }
 
 footer {
