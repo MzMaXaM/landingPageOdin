@@ -16,7 +16,7 @@
 <body>
   <header>
     <div class="container">
-      <h3>Alpacas website &#128525</h3>
+      <h3>Alpacas website 🦙 &#128525</h3>
       <ul>
         <li><a href="#topLink">Top link</a></li>
         <li><a href="#centerLink">Center link</a></li>
@@ -31,7 +31,7 @@
         <p>There are no wild alpacas – the alpaca is the domesticated version of the vicuña</p>
         <p>Vicuñas are descended from camel-like animals that evolved in North America then moved south roughly 3
           million years ago</p>
-        <button>Sign up</button>
+        <button onclick="alertFunction()">Sign up</button>
       </div>
       <img src="./images/pexels-magda-ehlers-1300358.jpg"
         alt="Photo by Magda Ehlers from Pexels: https://www.pexels.com/photo/shallow-focus-photography-of-brown-llama-1300358/">
@@ -74,12 +74,20 @@
       <h2>It's time!</h2>
       <p>Sign up by clicking this button</p>
     </div>
-    <button>Sign up</button>
+    <button onclick="alertFunction()">Sign up</button>
   </section>
   <footer>
     <p>coded by: MaXaM 2022</p>
     <p>design by: The Odin Project 2021</p>
   </footer>
+
+  <script>
+    function alertFunction() {
+      let smiles = ["😅", "👍"]
+      alert(`Hello!\nDidn't expect you here ${smiles[0]}\nFeel free to Like my project ${smiles[1]}`);
+    }
+  </script>
+
 </body>
 
 </html>
